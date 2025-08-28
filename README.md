@@ -78,17 +78,6 @@ assignment14-portfolio/
 
 You can drop your own images into `public/images/` and update imports in the content files.
 
-## 6) (Optional) Use your real component library
-If you built a separate component library for Assignment 12/13, you can replace the local `src/component-library/` with your package. Common options:
-
-- **Git submodule:** `git submodule add <repo-url> src/component-library` (export components’ index).
-- **GitHub dependency:** add to `package.json` like: `"@your-scope/ui": "github:<user>/<repo>#main"` and update imports accordingly.
-
-Ensure your components are exported with an `index.js` to keep import paths stable.
-
-## 7) CI (optional but included)
-`.github/workflows/ci.yml` builds the app on each push to validate the project compiles. You can extend it to build the Docker image or publish to GHCR.
-
 ---
 
 ## Troubleshooting
